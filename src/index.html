@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zomin tumani, Jizzax viloyati, O'zbekiston - Zomin milliy tabiat bog'i, sanatoriya, osma ko'prik, dor yo'li va go'zal tabiat haqida ma'lumot.">
+    <meta name="keywords" content="Zomin, Jizzax, O'zbekiston, Zomin milliy bog'i, Zomin sanatoriyasi, turizm, osma ko'prik, dor yo'li, piyoda sayohat, eko-turizm">
+    <meta name="author" content="TDIU universiteti vazifasi uchun yaratildi">
+    <title>Zomin - TDIU Universiteti Vazifasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #c8e6c9);
+            color: #333;
+            line-height: 1.8;
+        }
+        header {
+            background: linear-gradient(rgba(0, 50, 30, 0.7), rgba(0, 50, 30, 0.7)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            margin-bottom: 0.3em;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header h2 {
+            font-size: 2em;
+            font-weight: 300;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 3em auto;
+            padding: 0 2em;
+        }
+        section {
+            margin-bottom: 4em;
+        }
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: #2e5a3f;
+            text-align: center;
+            margin-bottom: 1em;
+            position: relative;
+        }
+        h3::after {
+            content: '';
+            width: 100px;
+            height: 3px;
+            background: #4a8b5e;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1.5em;
+            text-align: justify;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+            padding: 1em;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 1.5em;
+        }
+        .card-content h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5em;
+            color: #2e5a3f;
+            margin-bottom: 0.5em;
+        }
+        .card-content p {
+            font-size: 1em;
+            color: #666;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5em;
+            padding: 1em;
+        }
+        .gallery figure {
+            margin: 0;
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery figcaption {
+            margin-top: 0.5em;
+            font-size: 1em;
+            font-style: italic;
+            color: #555;
+        }
+        footer {
+            background: linear-gradient(to top, #2e5a3f, #4a8b5e);
+            color: white;
+            text-align: center;
+            padding: 2em;
+            font-size: 1.1em;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 768px) {
+            header {
+                height: 300px;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
+            header h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .container {
+                padding: 0 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TDIU</h1>
+        <h2>Zomin - Tabiatning Durdonasi</h2>
+    </header>
+
+    <div class="container">
+        <section>
+            <h3>Zomin Haqida</h3>
+            <p>Zomin tumani Oʻzbekiston Respublikasining Jizzax viloyatida joylashgan bo‘lib, Turkiston togʻ tizmasi etagida o'rnashgan. Tuman maydoni taxminan 2,670 kvadrat kilometrni tashkil qiladi va aholisi 2023-yil holatiga ko‘ra 150 mingdan ortiq kishini tashkil etadi. Aholining asosiy qismini o‘zbeklar tashkil qiladi, shuningdek, tojik, rus va boshqa millatlar ham yashaydi.</p>
+            <p>Zominda qishloq xo‘jaligi rivojlangan, ayniqsa g‘alla, kartoshka, sabzavot va mevalar yetishtiriladi. Chorvachilik va asalarichilik ham muhim sohalardan hisoblanadi. Tuman hududida maktablar, kollejlar, sog‘liqni saqlash muassasalari va boshqa ijtimoiy infratuzilma ob’ektlari mavjud bo‘lib, aholining turmush darajasini yaxshilashga xizmat qiladi.</p>
+        </section>
+
+        <section>
+            <h3>Diqqatga Sazovor Joylar</h3>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/zomin_milliy_bogi.jpg" alt="Zomin milliy tabiat bog'i">
+                    <div class="card-content">
+                        <h4>Zomin Milliy Tabiat Bog‘i</h4>
+                        <p>O‘zbekistonning eng yirik va qadimiy milliy bog‘laridan biri bo‘lib, turli xil o‘simliklar, hayvonlar va qushlar yashaydi. Bu yerda tabiat bilan birlashish imkoniyati mavjud.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/zomin_sanatoriyasi.jpg" alt="Zomin sanatoriyasi">
+                    <div class="card-content">
+                        <h4>Zomin Sanatoriyasi</h4>
+                        <p>Tog‘ havosi va davolovchi manbalari bilan mashhur bo‘lib, sog‘lomlashtirish va dam olish uchun ideal joy hisoblanadi.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/osma_koprik.jpg" alt="Zomindagi osma ko'prik">
+                    <div class="card-content">
+                        <h4>Osma Ko‘prik</h4>
+                        <p>Duoba qishlog‘ida joylashgan osma ko‘prikning balandligi 150 metr, uzunligi esa 305 metrni tashkil qiladi. U bir vaqtning o‘zida 600 kishini ko‘tara oladi.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/dor_yoli.jpg" alt="Zomin dor yo'li">
+                    <div class="card-content">
+                        <h4>Zomin Dor Yo‘li</h4>
+                        <p>Duoba qishlog‘idagi “Dor Yo‘li” majmuasida 12 ta minorali va 11 dona ustundan iborat osma dor yo‘li ajoyib manzaralar taqdim etadi.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/tog_piyoda.jpg" alt="Piyoda yurish yo'llari">
+                    <div class="card-content">
+                        <h4>Tog‘li Sayohatlar</h4>
+                        <p>Zomin tog‘larida piyoda yurish yo‘llari va eko-turizm imkoniyatlari mavjud bo‘lib, tabiatni sevuvchilar uchun ajoyib tajriba taqdim etadi.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/suffa_platosi.jpg" alt="Piyoda yurish yo'llari">
+                    <div class="card-content">
+                        <h4>Suffa Platosi</h4>
+                        <p>Turizmni rivojlantirish davlat qo‘mitasi Qurilish vazirligi, Jizzax viloyati hokimligi, manfaatdor vazirlik va idoralar bilan birgalikda 2021 yil 1 iyunga qadar xorijiy loyiha institutlarini, shuningdek, maslahatchilarni jalb qilgan holda “Zomin” erkin turistik zonasining rejalashtirish loyihasini ishlab chiqdi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Mahalliy Taomlar va An'analar</h3>
+            <p>Zomin o‘zining an’anaviy taomlari bilan ham mashhur. Mahalliy oshxonada qo‘y go‘shtidan tayyorlanadigan kaboblar, somsa va palovning o‘ziga xos turlari mashhur. Bundan tashqari, asal va mahalliy mevalardan tayyorlanadigan shirinliklar sayyohlarni o‘ziga jalb qiladi. Har yili bahorda tuman bo‘ylab "Lola Sayli" festivali o‘tkaziladi, unda mahalliy aholi va sayyohlar tabiatning go‘zalligidan bahramand bo‘lishadi.</p>
+        </section>
+
+        <section>
+            <h3>Zomin Manzaralari</h3>
+            <div class="gallery">
+                <figure>
+                    <img src="images/zomin_sanatoriyasi.jpg" alt="Zomin sanatoriyasi tog'lar fonida">
+                    <figcaption>Zomin sanatoriyasi, tog'lar</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/osma_koprik.jpg" alt="Zomindagi osma ko'prik">
+                    <figcaption>Duoba qishlog'idagi 150 metr balandlikdagi osma ko'prik</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/manzara.jpg" alt="Zominning go'zal manzarasi">
+                    <figcaption>Zominning go'zal tog' va vodiylari</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/dor_yoli.jpg" alt="Zomin dor yo'li">
+                    <figcaption>Zomin dor yo‘li, ajoyib manzaralar</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/sharshara.jpg" alt="Zomindagi sharshara">
+                    <figcaption>Zomin tog‘laridagi sokin sharshara</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lolazor.jfif" alt="Zomindagi lola dalalari">
+                    <figcaption>Zomindagi jonli lola dalalari</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bulut.jfif" alt="Zomindagi lola dalalari">
+                    <figcaption>Zomin manzarasi</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/zomin.jpg" alt="Zomindagi lola dalalari">
+                    <figcaption>Zomin oromgohi</figcaption>
+                </figure>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>TDIU Universiteti uchun yaratildi - 2025</p>
+    </footer>
+</body>
+</html>
